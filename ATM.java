@@ -5,8 +5,7 @@ public class ATM {
         int counterLoop = 0;
         int banknote = 0;
         while (counterLoop < banknoteBank.length) {
-            count = sum / banknoteBank[counterLoop];
-            banknote += count;
+            banknote += sum / banknoteBank[counterLoop];
             sum %= banknoteBank[counterLoop];
             counterLoop++;
         }
